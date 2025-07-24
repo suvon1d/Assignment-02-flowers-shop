@@ -17,3 +17,233 @@
     "wdth" 100;
 }
 
+body{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.primary-text{
+    color: #E95A08;
+}
+
+.section-title{
+    font-weight: bold;
+    font-size: 3.1rem;
+}
+
+.section-subtitle{
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.primary-btn{
+    color: white;
+    background-color: #E95A08;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 20px;
+    width: 100%;
+    border: none;
+}
+
+.flex{
+    display: flex;
+}
+
+.grid{
+    display: grid;
+}
+/* header related style*******/
+/* navbar relared style */
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul li{
+    list-style: none;
+}
+.navbar ul li a{
+    text-decoration: none;
+    margin-right: 48px;
+}
+
+/* banner related style  */
+
+.banner-title{
+    font-weight: bold;
+    font-size: 4.1rem;
+}
+
+
+/* plants section related style */
+
+.plants{
+    text-align: center;
+}
+
+.plant-card{
+    text-align: center;
+}
+
+.plant-card img{
+    height: fit-content;
+    width: 100%;
+}
+
+.card-title{
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.price{
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.plants-cards{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px 20px;
+}
+
+
+/* plants lover section related style */
+
+.plants-lover{
+    margin-top: 210px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.plants-lover-img{
+    position: relative;
+    max-width: 540px;
+}
+
+.badge img{
+    max-width: 284px;
+    position: absolute;
+    top: -127px;
+    right: -90px;
+}
+
+.plants-lover-details ul li{
+    margin-bottom: 18px;
+}
+
+
+/* latest deals section style */
+.latest-deals{
+    text-align: center;
+    margin-top: 132px;
+    margin-bottom: 120px;
+}
+
+.Latest-layout-cards{
+    grid-template-areas: 
+        "card-1  card-3"
+        "card-2  card-3";
+    gap: 28px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+
+
+
+}
+
+.card{
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 15px;
+    gap: 28px;
+}
+.layout-card_1{
+    grid-area: card-1;
+    background-image:linear-gradient(180deg, rgba(47, 47, 60, 0.253) 0%, rgba(47, 47, 60, 0.253) 0%), url(/assets/deal-bloom.png);
+    background-size: cover;
+    background-position: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.layout-card_2{
+    grid-area: card-2;
+    background-image:linear-gradient(180deg, rgba(47, 47, 60, 0.253) 0%, rgba(47, 47, 60, 0.253) 0%),  url(/assets/deal-ana.png);
+    background-size: cover;
+    background-position: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.layout-card_3{
+    grid-area: card-3;
+    background-image:linear-gradient(180deg, rgba(47, 47, 60, 0.253) 0%, rgba(47, 47, 60, 0.253) 0%),  url(/assets/deal-zabo.png);
+    background-size: cover;
+    background-position: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.Latest-layout-cards a{
+    color: white;
+}
+
+
+
+/* join section related style */
+
+.join-section-content h2{
+    color: white;
+    text-align: center;
+}
+.input-gmail{
+    width: 100%
+    ;
+}
+
+
+
+
+/*media queries */
+
+@media screen and (max-width: 576px){
+
+    body{
+        margin: 0 10px;
+    }
+    .menu,
+    .badge img{
+    display: none;
+    }
+    .banner-title{
+        font-size: 3.2rem;
+    }
+    .banner{
+        flex-direction:column-reverse;
+    }
+    
+    .plants-lover{
+        flex-direction: column;
+    }
+    .plants-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .plants-lover-img img{
+    max-width: 360px;
+    }
+
+    .Latest-layout-cards{
+    grid-template-areas: 
+        "card-1"
+        "card-2"
+        "card-3"  ;
+    grid-template-columns: 1fr;
+    }
+    .card{
+        font-size: 1.2rem;
+    }
+}
