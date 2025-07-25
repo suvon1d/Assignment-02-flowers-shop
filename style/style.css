@@ -17,7 +17,10 @@
     "wdth" 100;
 }
 
-body{
+header,
+.plants,
+.plants-lover,
+.latest-deals{
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -183,6 +186,7 @@ body{
     background-image:linear-gradient(180deg, rgba(47, 47, 60, 0.253) 0%, rgba(47, 47, 60, 0.253) 0%),  url(/assets/deal-zabo.png);
     background-size: cover;
     background-position: center;
+    color: white;
     font-weight: bold;
     font-size: 2.5rem;
 }
@@ -194,28 +198,54 @@ body{
 
 
 /* join section related style */
+.join-section{
+    width: 100vw;
+    margin: 0;
+}
 
-.join-section-content h2{
-    color: white;
+.inner-content-img{
+    grid-area: card-1;
+    background-image: url(/assets/news-letter-bg.png);
+    background-size: cover;
+    background-position: center;
     text-align: center;
+    font-weight: bold;
+    font-size: 3.2rem;
+    color: white;
+    padding: 194px 0;
 }
-.input-gmail{
-    width: 100%
-    ;
+.join-form{
+    justify-content: center;
 }
 
+.subscribe-btn{
+    color: white;
+    background-color: #E95A08;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 20px 53px;
+    border: none;
+}
+.join-form input{
+    width: 644px;
+    padding-left: 20px;
 
+}
 
 
 /*media queries */
 
 @media screen and (max-width: 576px){
 
-    body{
-        margin: 0 10px;
+    .navbar,
+    .plants,
+    .plants-lover,
+    .latest-deals{
+        margin: 40px 20px;
     }
     .menu,
-    .badge img{
+    .badge img,
+    .inner-content-img h3{
     display: none;
     }
     .banner-title{
@@ -246,4 +276,16 @@ body{
     .card{
         font-size: 1.2rem;
     }
+    .inner-content-img{
+        padding-top: 110px;
+        padding-bottom:65px ;
+    }
+    .subscribe-btn,
+    .join-form input{
+       padding: 20px 12px; 
+    }
+    .join-form input{
+    width: 210px;
+
+}
 }
