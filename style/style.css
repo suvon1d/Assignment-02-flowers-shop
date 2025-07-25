@@ -233,6 +233,34 @@ header,
 }
 
 
+/* footer related style */
+
+.footer-container{
+    justify-content:center;
+    padding: 100px;
+    gap: 100px;
+}
+
+.footer-links-content{
+    gap: 100px;
+}
+
+.footer-link{
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.footer-link a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #6B7280;
+}
+
+.footer-social{
+    gap: 24px;
+}
+
 /*media queries */
 
 @media screen and (max-width: 576px){
@@ -255,7 +283,8 @@ header,
         flex-direction:column-reverse;
     }
     
-    .plants-lover{
+    .plants-lover,
+    .footer-container{
         flex-direction: column;
     }
     .plants-cards{
@@ -281,11 +310,15 @@ header,
         padding-bottom:65px ;
     }
     .subscribe-btn,
-    .join-form input{
+    .join-form input,
+    .footer-container{
        padding: 20px 12px; 
     }
     .join-form input{
     width: 210px;
 
-}
+    }
+    .footer-container{
+        gap: 30px;
+    }
 }
